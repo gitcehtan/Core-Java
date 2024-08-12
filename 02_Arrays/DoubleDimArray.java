@@ -1,6 +1,7 @@
 public class DoubleDimArray {
     public static void main(String[] args) {
         int [][] nums1 = {{10,20,30},{40,50,60}};
+        int [][] nums2 = new int [2][];
 
         for (int[] i : nums1) {
             for ( int j : i) {
@@ -14,6 +15,9 @@ public class DoubleDimArray {
         System.out.println(nums1[0][0]);
         System.out.println("nums1 length Row "+nums1.length);
         System.out.println("nums1[0] length Column "+nums1[0].length);
+        System.out.println(nums2);
+        System.out.println(nums2[0]); 
+        System.out.println(nums2[0][0]); // NullPointerException
     }
 }
 
